@@ -1,0 +1,14 @@
+For MS4 and MS5, I used derived classes, derived functions, added in one templated function, and used previous knowledge of I/O operators, dynamic memory, and casting.
+The CovidPatient and TriagePatient classes are derived from the Patient class which is derived from the IOAble class. The IOAble class holds virtual functions which are implemented in the child classes. This is useful so that the designer can look at the parent class and find which functions are to be implemented.
+The templated function was used in utils.h called removeDynamicElement which deletes an element of an array with a given index and decreases the dynamic memory as a result of a successful deletion.
+This function needs to be templated since different arrays of class objects can be called as a parameter and the function must be able to accept any class for this function to work properly.
+The removeDynamicElement function is called in the removePatientFromLineup function in PreTriage.h.
+I/O operators were used in the load and deconstructor to open the datafile and read the values listed in the files.
+Casting was used to cast int to unsigned int so that the Time.h operators could be used to full effect.
+The project overall was very helpful for my learning and for consolidating the information provided to me during lectures and the BTP200 website. 
+The milestones were also very helpful as it mostly followed closely to what we were learning at the time in class, so it was another opportunity to practice. 
+The final part of the project was fitting all the modules together to create a very applicable and useful program which helps me understand the how to apply coding to real world issues.
+As a whole, I very much enjoyed BTP200 and enjoyed how many workshop opportunities there were to practice what I learned. 
+If I could change two things about the course, I would change the quizzes and workshops so that the content aligns with what was learned that week. 
+For the quizzes, it was difficult for me to learn without seeing examples in class so I would prefer the quizzes take place after the class.
+With the workshops, I would've liked to have them open earlier so that I can start working on them the same week that we learn the content to be applied in the workshop.
